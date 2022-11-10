@@ -8,7 +8,7 @@
 }
 
 nav {
-  background-color: #3b3a3a;
+  background-color: #008a95;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -64,27 +64,26 @@ nav .header_right .nav-heading {
   font-size: xxx-large;
   padding: 3% 0%;
 }
-
-nav .header_right .algos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (16.66667%)[6];
-      grid-template-columns: repeat(6, 16.66667%);
-  place-content: center;
-  padding: 2% 0%;
+nav .header_right .algos {   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content:center;
+  gap: 0% 2%;
+  margin-top: 1%; 
 }
-
 nav .header_right .algos button {
   background-color: transparent;
   border: none;
   color: white;
   outline: none;
-  padding: 5% 0%;
-  font-size: x-large;
+  padding: 0% 1.5%;  
+  font-size: larger;  
 }
 
 nav .header_right .algos button:hover {
-  background-color: blue;
+  background-color: rgb(0, 112, 249);
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -100,7 +99,8 @@ nav .header_right .algos .butt_locked:hover {
 
 nav .header_right .algos .butt_selected {
   background-color: white;
-  color: green;
+  border-radius: 20px;
+  color: rgb(0, 115, 255); 
 }
 
 nav .header_right .algos .butt_selected:hover {
@@ -108,8 +108,8 @@ nav .header_right .algos .butt_selected:hover {
   cursor: pointer;
 }
 
-nav .header_right .algos .butt_unselected:hover {
-  background-color: blue;
+nav .header_right .algos .butt_unselected:hover { /* why */
+  background-color: rgb(0, 115, 255);
   cursor: pointer;
 }
 
@@ -164,22 +164,3 @@ section #Info_Cont2 h3 {
 .hide {
   display: none;
 }
-
-/*
-@media (max-width: 480px)//Mobiles
-{
-    
-}
-
-@media (min-width: 481px) and (max-width: 1250px)//Tablets
-{
-
-}
-
-@media (min-width: 1251px)//Laptops and up
-{
-
-}
-*/
-
-/*# sourceMappingURL=style.css.map */
